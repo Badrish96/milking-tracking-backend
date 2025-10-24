@@ -27,8 +27,12 @@ npm install
 3. Create a `.env` file in the server directory:
 ```
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/milking-tracking
+MONGODB_URI=your_mongodb_connection_string
 ```
+
+Note: For the `MONGODB_URI`, you can either:
+- Use a local MongoDB instance: `mongodb://localhost:27017/milking-tracking`
+- Get a connection string from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for a cloud-hosted database
 
 ## 🚀 Development
 
@@ -138,4 +142,4 @@ Response:
 | Variable | Description | Default |
 |----------|-------------|---------|
 | PORT | Server port number | 5000 |
-| MONGODB_URI | MongoDB connection string | - |
+| MONGODB_URI | MongoDB connection string (Get from MongoDB Atlas or use local MongoDB instance) | - |
